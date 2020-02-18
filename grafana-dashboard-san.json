@@ -1,4 +1,32 @@
 {
+  "__inputs": [
+    {
+      "name": "DS_INFLUX",
+      "label": "Influx",
+      "description": "",
+      "type": "datasource",
+      "pluginId": "influxdb",
+      "pluginName": "InfluxDB"
+    }
+  ],
+  "__requires": [
+    {
+      "type": "grafana",
+      "id": "grafana",
+      "name": "Grafana",
+      "version": "4.4.1"
+    },
+    {
+      "type": "datasource",
+      "id": "influxdb",
+      "name": "InfluxDB",
+      "version": "1.0.0"
+    }
+  ],  
+  
+  
+  
+  
   "annotations": {
     "list": [
       {
@@ -47,7 +75,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "InfluxDB",
+      "datasource": "${DS_INFLUX}",
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -168,7 +196,7 @@
         "#d44a3a",
         "#d44a3a"
       ],
-      "datasource": "InfluxDB",
+      "datasource": "${DS_INFLUX}",
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -272,7 +300,7 @@
         "#d44a3a",
         "#d44a3a"
       ],
-      "datasource": "InfluxDB",
+      "datasource": "${DS_INFLUX}",
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -376,7 +404,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "InfluxDB",
+      "datasource": "${DS_INFLUX}",
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -490,7 +518,7 @@
     },
     {
       "cacheTimeout": null,
-      "datasource": "InfluxDB",
+      "datasource": "${DS_INFLUX}",
       "gridPos": {
         "h": 5,
         "w": 7,
@@ -597,7 +625,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "InfluxDB",
+      "datasource": "${DS_INFLUX}",
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -690,7 +718,7 @@
         "#d44a3a",
         "#d44a3a"
       ],
-      "datasource": "InfluxDB",
+      "datasource": "${DS_INFLUX}",
       "decimals": 1,
       "format": "timeticks",
       "gauge": {
@@ -786,7 +814,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "InfluxDB",
+      "datasource": "${DS_INFLUX}",
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -873,7 +901,7 @@
     {
       "cacheTimeout": null,
       "columns": [],
-      "datasource": "InfluxDB",
+      "datasource": "${DS_INFLUX}",
       "fontSize": "100%",
       "gridPos": {
         "h": 27,
@@ -1063,7 +1091,7 @@
     },
     {
       "columns": [],
-      "datasource": "InfluxDB",
+      "datasource": "${DS_INFLUX}",
       "fontSize": "100%",
       "gridPos": {
         "h": 16,
@@ -1288,7 +1316,7 @@
     {
       "cacheTimeout": null,
       "columns": [],
-      "datasource": "InfluxDB",
+      "datasource": "${DS_INFLUX}",
       "fontSize": "100%",
       "gridPos": {
         "h": 9,
@@ -1466,7 +1494,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "InfluxDB",
+      "datasource": "${DS_INFLUX}",
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
@@ -1607,7 +1635,6 @@
     ]
   },
   "timezone": "",
-  "title": "SAN SCv2020",
-  "uid": "4DwSh2wZk",
+  "title": "Dell Compellent",
   "version": 32
 }
